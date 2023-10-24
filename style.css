@@ -1542,11 +1542,12 @@ main .carousel-slide img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 30px;
   }
   .servicos .servico {
     margin: 10px;
     padding: 20px;
-    width: 165px;
+    width: 300px;
     height: 300px;
     display: flex;
     justify-content: center;
@@ -1559,17 +1560,13 @@ main .carousel-slide img {
     transition: 0.5s;
     cursor: pointer;
   }
-  .servicos .servico img {
-    width: 40px;
-    height: 40px;
-  }
   .servicos .servico h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #d1ac30;
     text-align: center;
   }
   .servicos .servico p {
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: #a7a7a7;
     text-align: center;
   }
