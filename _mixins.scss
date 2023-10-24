@@ -263,15 +263,21 @@ $cor-cinza: #a7a7a7;
 
             .icons {
                 display: flex;
+                align-items: center;
 
-                a i {
-                    font-size: 1.5rem;
-                    margin: 0 10px;
-                    color: $cor-branco;
-                    transition: .5s;
+                a {
+                    color: $cor-primaria;
+                    text-decoration: none;
 
                     &:hover {
                         color: $cor-branco;
+                    }
+
+                    i {
+                        font-size: 1.5rem;
+                        margin: 0 10px;
+                        color: $cor-primaria;
+                        transition: .5s;
                     }
                 }
             }
@@ -362,14 +368,24 @@ $cor-cinza: #a7a7a7;
                 @include p-mobile;
             }
 
-            a i {
-                font-size: 1.5rem;
-                margin: 0 10px;
-                color: $cor-branco;
-                transition: .5s;
+            .icons {
+                display: flex;
+                align-items: center;
 
-                &:hover {
-                    color: $cor-branco;
+                a {
+                    color: $cor-primaria;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $cor-branco;
+                    }
+
+                    i {
+                        font-size: 1.5rem;
+                        margin: 0 10px;
+                        color: $cor-primaria;
+                        transition: .5s;
+                    }
                 }
             }
         }
