@@ -78,9 +78,31 @@
 main {
   max-width: 100vw;
 }
+main #wpp-btn {
+  margin: 20px;
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  animation: wpp-btn 1s ease-in-out infinite;
+}
+main #wpp-btn:hover {
+  animation: none;
+}
+@keyframes wpp-btn {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
 main .carousel-container {
-  width: 80%;
-  margin: 30px auto;
+  width: 100%;
+  margin: 0px auto;
   overflow: hidden;
   position: relative;
 }
@@ -161,7 +183,7 @@ main .carousel-slide {
   width: 100%;
 }
 main .carousel-slide img {
-  width: 80vw;
+  width: 100vw;
 }
 
 @media (max-width: 1000px) {
@@ -267,7 +289,7 @@ main .carousel-slide img {
   }
   main .carousel-container {
     width: 100%;
-    margin: 30px auto;
+    margin: 0px auto;
     overflow: hidden;
   }
   main .carousel-container-btns {
@@ -449,7 +471,7 @@ main .carousel-slide img {
   }
   main .carousel-container {
     width: 100%;
-    margin: 30px auto;
+    margin: 0px auto;
     overflow: hidden;
   }
   main .carousel-container-btns {
@@ -622,7 +644,7 @@ main .carousel-slide img {
   }
   main .carousel-container {
     width: 100%;
-    margin: 30px auto;
+    margin: 0px auto;
     overflow: hidden;
   }
   main .carousel-container-btns {
@@ -829,10 +851,11 @@ main .carousel-slide img {
   gap: 20px;
 }
 .second__section-imagem {
-  width: 50%;
+  width: 40%;
   height: 100%;
 }
 .second__section-conteudo {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -962,7 +985,8 @@ main .carousel-slide img {
   width: 100%;
   margin: 50px auto;
   padding: 50px 50px;
-  background-color: #d1ac30;
+  background-image: url(assets/gold.jpg);
+  background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .third__section .third__section-container {
@@ -985,7 +1009,8 @@ main .carousel-slide img {
     width: 100%;
     margin: 50px auto;
     padding: 50px 50px;
-    background-color: #d1ac30;
+    background-image: url(assets/gold.jpg);
+    background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   .third__section .third__section-container {
@@ -1010,6 +1035,7 @@ main .carousel-slide img {
   margin: 50px auto;
   padding: 50px 50px;
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
 }
@@ -1023,6 +1049,7 @@ main .carousel-slide img {
   font-size: 2rem;
   color: #101820;
   font-weight: 800;
+  text-align: center;
 }
 .fourth__section-content-itens {
   display: flex;
@@ -1057,7 +1084,7 @@ main .carousel-slide img {
   font-weight: 400;
 }
 .fourth__section-image {
-  width: 50%;
+  width: 40%;
 }
 
 @media (max-width: 768px) {
@@ -1080,10 +1107,13 @@ main .carousel-slide img {
     font-size: 2rem;
     color: #101820;
     font-weight: 800;
+    text-align: center;
   }
   .fourth__section-content-itens {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    gap: 20px;
   }
   .fourth__section-content-itens i {
     padding: 20px;
@@ -1103,12 +1133,15 @@ main .carousel-slide img {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
   }
   .fourth__section-content-itens .itens-content h3 {
+    text-align: center;
     color: #101820;
     font-size: 1.5rem;
   }
   .fourth__section-content-itens .itens-content p {
+    text-align: center;
     font-size: 1.2rem;
     color: #101820;
     font-weight: 400;
