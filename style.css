@@ -1363,7 +1363,7 @@ main .carousel-slide img {
   transition: 0.5s;
 }
 #footer .footer__content .footer__itens ul li a:hover {
-  color: #101820;
+  color: #d1ac30;
 }
 #footer .footer__content .footer__contato ul li {
   display: flex;
@@ -1452,7 +1452,7 @@ main .carousel-slide img {
     transition: 0.5s;
   }
   #footer .footer__content .footer__itens ul li a:hover {
-    color: #101820;
+    color: #d1ac30;
   }
   #footer .footer__content .footer__contato ul li {
     display: flex;
