@@ -2,13 +2,13 @@ $cor-primaria: #d1ac30;
 $cor-secundaria: #101820;
 $cor-branco: #fff;
 $cor-preto: #000;
-$cor-cinza: #a7a7a7;
+$cor-cinza: #7e7e7e;
 
 
 
 // header
 @mixin header {
-    background: linear-gradient(to bottom, #000, #242424);
+    background: linear-gradient(to bottom, #3f3f3f, #242424);
     height: auto;
 
     .info {
@@ -256,7 +256,7 @@ $cor-cinza: #a7a7a7;
 
             p {
                 margin-bottom: 20px;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 color: $cor-branco;
                 font-weight: 400;
             }
